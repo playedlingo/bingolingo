@@ -103,9 +103,9 @@ function(err, user)
 if (!user)
 {
 //heroku 3c..  
-//return res.send('Password reset token is invalid or has expired. <a href="https://bestalk.herokuapp.com">home</a>');
+return res.send('Password reset token is invalid or has expired. <a href="https://bestalk.herokuapp.com">home</a>');
 //glitch..
-return res.send('Password reset token is invalid or has expired. <a href="https://bestalk-test.glitch.me">home</a>');
+//return res.send('Password reset token is invalid or has expired. <a href="https://bestalk-test.glitch.me">home</a>');
 //
 }//if
 //console.log(user);
@@ -117,9 +117,9 @@ user.save((err) =>
 if (err) throw err;
 });//save
 //heroku    
-//res.send("Password reseted succesfully! <a href='https://bestalk.herokuapp.com'>Login</a>");
+res.send("Password reseted succesfully! <a href='https://bestalk.herokuapp.com'>Login</a>");
 //glitch..
-res.send("Password reseted succesfully! <a href='https://bestalk-test.glitch.me'>Login</a>");
+//res.send("Password reseted succesfully! <a href='https://bestalk-test.glitch.me'>Login</a>");
 });//findone
 });//post reset
 
